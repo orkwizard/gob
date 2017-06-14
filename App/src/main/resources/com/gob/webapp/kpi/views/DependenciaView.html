@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="crud-template" spacing="false" responsive size-full margin="false">
+   <vaadin-horizontal-layout style-name="top-bar" spacing="false" width-full height="50px">
+    <vaadin-horizontal-layout spacing="false" width-full :middle :expand>
+     <vaadin-text-field icon="fonticon://Vaadin-Icons/e805" style-name="small inline-icon search" placeholder="Busqueda" width-full _id="search"></vaadin-text-field>
+    </vaadin-horizontal-layout>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="borderless" plain-text _id="add" :middle :right>
+      Agregar nuevo 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-css-layout style-name="content" size-full :expand>
+    <vaadin-css-layout style-name="list" height-full>
+     <vaadin-grid caption="Dependencias" responsive width="788px" height="340px" _id="list"></vaadin-grid>
+    </vaadin-css-layout>
+    <vaadin-vertical-layout style-name="inspect" spacing="false" responsive height="351px" margin="false">
+     <vaadin-css-layout style-name="edit" width-full :bottom :center>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-text-field caption="Dependencia:" style-name="small" width-full _id="dependencia"></vaadin-text-field>
+      </vaadin-css-layout>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-text-field caption="Descripcion:" style-name="small" width-full _id="descripcion"></vaadin-text-field>
+      </vaadin-css-layout>
+     </vaadin-css-layout>
+     <vaadin-horizontal-layout style-name="buttons border-top" width-full height="50px" :bottom :center>
+      <vaadin-button style-name="small primary" plain-text _id="update" :middle>
+        Actualizar 
+      </vaadin-button>
+      <vaadin-button style-name="small" plain-text _id="cancel" :middle :center>
+        Cancelar 
+      </vaadin-button>
+      <vaadin-button style-name="small danger" plain-text _id="delete" :middle :right :expand>
+        Borrar 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+   </vaadin-css-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
